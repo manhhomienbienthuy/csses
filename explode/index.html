@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<title>Explode Animation</title>
+<link rel="stylesheet" href="style.css">
+
+<div class="controls">
+    <label for="explode">Explode?</label>
+    <input type="checkbox" id="explode" />
+</div>
+<div class="slides">
+    <div class="container">
+        <header>
+            <h1>Platform</h1>
+        </header>
+        <main>
+            <div>
+                <section>
+                    <img src="https://images.unsplash.com/photo-1496303861503-f6ec4e50034e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1280"
+                        alt="background img">
+                </section>
+            </div>
+            <section>
+                <div class="content">
+                    <p>Use the web platform.<br />It's pretty cool.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="captioner">
+        <div class="caption caption--main">Clip the top of &lt;main&gt;.<br />Hides the sticky header.</div>
+        <div class="caption caption--sticky">Sticky position header<br />inside &lt;main&gt;<br />that's clipped to
+            start.
+        </div>
+    </div>
+    <div class="clipper">
+        <div class="caption">Fixed position header<br />sits behind and<br />then gets covered<br />by &lt;main&gt;.
+        </div>
+        <header aria-hidden="true">
+            <h1>Platform</h1>
+        </header>
+    </div>
+</div>
